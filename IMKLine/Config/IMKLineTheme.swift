@@ -14,7 +14,7 @@ public struct IMKLineTheme {
     
     public static let LineColor = UIColor.blue
     
-    public static let BorderColor = UIColor.init(rgbHex: 0x444444)
+    public static let BorderColor = UIColor.init(rgbHex: 0xF5F5F5)
     
     public static let KLineValueBgColor = UIColor.init(rgbaHex: 0x1E1E1EAA)
     
@@ -63,9 +63,9 @@ public struct IMKLineTheme {
 //        }
 //    }
     
-    public static let RiseColor = UIColor.red
+    public static let RiseColor = UIColor.init(rgbHex: 0xE66363)
 
-    public static let DownColor = UIColor.green
+    public static let DownColor = UIColor.init(rgbHex: 0x00B984)
     
     public static var CrossLineColor = UIColor.init(rgbHex: 0x888888)
     
