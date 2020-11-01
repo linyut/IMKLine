@@ -66,23 +66,23 @@ public class IMKLineView: UIView {
             let lowPoint = self.minKline.klinePosition.lowPoint
             if self.minKline.klinePosition.lowPoint.x - self.superScrollView.contentOffset.x > self.superScrollView.frame.width / 2 {
                 let ocStr = "\(self.minKline.low)→" as NSString
-                let textSize = ocStr.size(withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
-                ocStr.draw(at: CGPoint.init(x: lowPoint.x - textSize.width, y: lowPoint.y - textSize.height / 2), withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedStringKey.foregroundColor:IMKLineTheme.HLTextColor])
+                let textSize = ocStr.size(withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
+                ocStr.draw(at: CGPoint.init(x: lowPoint.x - textSize.width, y: lowPoint.y - textSize.height / 2), withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedString.Key.foregroundColor:IMKLineTheme.HLTextColor])
             } else {
                 let ocStr = "←\(self.minKline.low)" as NSString
-                let textSize = ocStr.size(withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
-                ocStr.draw(at: CGPoint.init(x: lowPoint.x, y: lowPoint.y - textSize.height / 2), withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedStringKey.foregroundColor:IMKLineTheme.HLTextColor])
+                let textSize = ocStr.size(withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
+                ocStr.draw(at: CGPoint.init(x: lowPoint.x, y: lowPoint.y - textSize.height / 2), withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedString.Key.foregroundColor:IMKLineTheme.HLTextColor])
             }
             // 绘制 最大值 指示文字
             let highPoint = self.maxKline.klinePosition.highPoint
             if self.maxKline.klinePosition.lowPoint.x - self.superScrollView.contentOffset.x > self.superScrollView.frame.width / 2 {
                 let ocStr = "\(self.maxKline.high)→" as NSString
-                let textSize = ocStr.size(withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
-                ocStr.draw(at: CGPoint.init(x: highPoint.x - textSize.width, y: highPoint.y - textSize.height / 2), withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedStringKey.foregroundColor:IMKLineTheme.HLTextColor])
+                let textSize = ocStr.size(withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
+                ocStr.draw(at: CGPoint.init(x: highPoint.x - textSize.width, y: highPoint.y - textSize.height / 2), withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedString.Key.foregroundColor:IMKLineTheme.HLTextColor])
             } else {
                 let ocStr = "←\(self.maxKline.high)" as NSString
-                let textSize = ocStr.size(withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
-                ocStr.draw(at: CGPoint.init(x: highPoint.x, y: highPoint.y - textSize.height / 2), withAttributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedStringKey.foregroundColor:IMKLineTheme.HLTextColor])
+                let textSize = ocStr.size(withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize)])
+                ocStr.draw(at: CGPoint.init(x: highPoint.x, y: highPoint.y - textSize.height / 2), withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: IMKLineTheme.TipTextFontSize), NSAttributedString.Key.foregroundColor:IMKLineTheme.HLTextColor])
             }
         }
         
