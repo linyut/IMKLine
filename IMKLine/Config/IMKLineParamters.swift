@@ -85,7 +85,7 @@ public class IMKLineParamters: NSObject {
     public static let IMKLineMATypeChanged = NSNotification.Name.init("IMKLineMATypeChanged")
     
     /// KLine 底部MACD/KDJ图 显示类型
-    public static var AccessoryType: IMKLineAccessoryType = .MACD {
+    public static var AccessoryType: IMKLineAccessoryType = .NONE {
         willSet {
             accessoryTypeChanged =  newValue != AccessoryType
         }
@@ -135,7 +135,7 @@ public class IMKLineParamters: NSObject {
     public static func reset() {
         ZoomScale = CGFloat(1)
         KLineMAType = .MA
-        AccessoryType = .MACD
+        AccessoryType = .NONE
     }
     
 }

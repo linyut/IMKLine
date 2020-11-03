@@ -11,7 +11,7 @@ import UIKit
 public struct IMKLineConfig {
     
     /// KLine 蜡烛初始默认宽度
-    public static let KLineDefaultWidth = CGFloat(10)
+    public static let KLineDefaultWidth = CGFloat(7)
     /// KLine 蜡烛宽度
     public static var KLineWidth: CGFloat {
         get {
@@ -24,7 +24,7 @@ public struct IMKLineConfig {
     /// KLine 蜡烛影线宽度
     public static let KLineHatchedWidth = CGFloat(1)
     /// KLine 蜡烛间隙
-    public static let KLineGap = CGFloat(1)
+    public static let KLineGap = CGFloat(3)
     
     /// KLine 分时线宽度
     public static let LineWidth = CGFloat(1)
